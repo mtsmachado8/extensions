@@ -19,7 +19,7 @@ const jsonFormat = combine(
 
 const logger = createLogger({
   level: LEVEL || 'info',
-  format: ENV === 'development' ? colorFormat : jsonFormat,
+  format: ENV === 'development' || ENV === 'test' ? colorFormat : jsonFormat,
   defaultMeta: {
     hostname: hostname()
   },
