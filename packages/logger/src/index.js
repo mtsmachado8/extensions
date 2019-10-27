@@ -4,7 +4,7 @@ const { createLogger, transports, format } = require('winston')
 const { combine, colorize, printf, timestamp, errors, json } = format
 
 const LEVEL = process.env.LOG_LEVEL
-const ENV = process.env.NODE_ENV || 'development'
+const NODE_ENV = process.env.NODE_ENV || 'development'
 
 const colorFormat = combine(
   errors({ stack: true }),
@@ -19,7 +19,7 @@ const jsonFormat = combine(
 
 const logger = createLogger({
   level: LEVEL || 'info',
-  format: ENV === 'development' || ENV === 'test' ? colorFormat : jsonFormat,
+  format: NODE_ENV === 'development' || NODE_ENV === 'test' ? colorFormat : jsonFormat,
   defaultMeta: {
     hostname: hostname()
   },
