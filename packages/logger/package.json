@@ -22,7 +22,8 @@
     "url": "git+https://github.com/mtsmachado8/extensions.git"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "coverage": "jest --collectCoverage=true"
   },
   "bugs": {
     "url": "https://github.com/mtsmachado8/extensions/issues"
