@@ -9,4 +9,6 @@ jobs:
       - run: yarn install
       - run: yarn test
       - run: 'echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc'
+      - run: git config --global user.email circleci@circleci
+      - run: git config --global user.name CircleCI
       - run: yarn pub
