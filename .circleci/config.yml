@@ -8,5 +8,10 @@ jobs:
       - checkout
       - run: yarn install
       - run: yarn test
+      - run:
+          name: "Run Jest and Collect Coverage Reports"
+          command: yarn coverage
+      - store_artifacts:
+          path: coverage
       - run: 'echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc'
       - run: yarn pub
