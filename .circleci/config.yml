@@ -9,6 +9,9 @@ jobs:
       - run: yarn install
       - run: yarn test
       - run: 'echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc'
+      - add_ssh_keys:
+          fingerprints:
+            - "da:05:68:71:6f:2f:0d:d0:2c:84:1d:a8:be:3f:28:79"
       - run: git config --global user.email circleci@circleci
       - run: git config --global user.name CircleCI
       - run: yarn pub
