@@ -12,7 +12,8 @@
     "diff": "lerna diff",
     "fix": "eslint --ext .js packages/ --fix",
     "lint": "eslint --ext .js packages/",
-    "pub": "lerna publish patch --yes"
+    "new-version": "lerna version",
+    "pub": "lerna publish --from-package"
   },
   "author": "",
   "license": "ISC",
