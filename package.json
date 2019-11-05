@@ -13,7 +13,7 @@
     "fix": "eslint --ext .js packages/ --fix",
     "lint": "eslint --ext .js packages/",
     "lerna:version": "lerna version prerelease --preid beta",
-    "lerna:publish": "lerna publish --from-git --dist-tag beta"
+    "lerna:publish": "lerna publish from-package"
   },
   "author": "",
   "license": "ISC",
