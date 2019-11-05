@@ -5,6 +5,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "lerna run test --parallel",
     "coverage": "http-server packages/logger/coverage/lcov-report",
