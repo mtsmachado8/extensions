@@ -1,0 +1,35 @@
+{
+  "name": "@mtsmachado8/copy",
+  "version": "0.0.0",
+  "description": "My default logger",
+  "keywords": [
+    "log",
+    "logger"
+  ],
+  "author": "mtsmachado8 <mtsmachado8@gmail.com>",
+  "homepage": "https://github.com/mtsmachado8/extensions",
+  "license": "ISC",
+  "main": "src/index.js",
+  "directories": {
+    "src": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtsmachado8/extensions.git"
+  },
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --collectCoverage=true"
+  },
+  "bugs": {
+    "url": "https://github.com/mtsmachado8/extensions/issues"
+  },
+  "dependencies": {
+    "os": "^0.1.1",
+    "winston": "^3.2.1"
+  }
+}
