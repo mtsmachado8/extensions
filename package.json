@@ -1,5 +1,6 @@
 {
   "name": "extensions",
+  "private": false,
   "description": "My personal extensions on npm registry",
   "workspaces": [
     "packages/*"
