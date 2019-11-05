@@ -12,7 +12,7 @@
     "diff": "lerna diff",
     "fix": "eslint --ext .js packages/ --fix",
     "lint": "eslint --ext .js packages/",
-    "new-version": "lerna version --no-push",
+    "new-version": "lerna version --no-push --no-git-tag-version",
     "pub": "lerna publish --from-package"
   },
   "author": "",
