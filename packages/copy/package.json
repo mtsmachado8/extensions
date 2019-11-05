@@ -1,6 +1,6 @@
 {
   "name": "@mtsmachado8/copy",
-  "version": "0.0.9-beta.1",
+  "version": "0.0.9-beta.2",
   "private": false,
   "publishConfig": {
     "access": "public"
