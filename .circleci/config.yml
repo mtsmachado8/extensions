@@ -14,4 +14,4 @@ jobs:
             - "da:05:68:71:6f:2f:0d:d0:2c:84:1d:a8:be:3f:28:79"
       - run: git config --global user.email circleci@circleci
       - run: git config --global user.name CircleCI
-      - run: yarn pub
+      - run: yarn lerna:publish
