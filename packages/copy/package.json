@@ -1,6 +1,10 @@
 {
   "name": "@mtsmachado8/copy",
   "version": "0.0.9-beta.1",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "My default logger",
   "keywords": [
     "log",
@@ -32,5 +36,5 @@
     "os": "^0.1.1",
     "winston": "^3.2.1"
   },
-  "gitHead": "a6a84be750d42f522b30afb23262cdac3be8189e"
+  "gitHead": "211f918c2843a1f4d24fd4f0ffa86e4656679f61"
 }

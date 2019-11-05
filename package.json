@@ -1,13 +1,13 @@
 {
   "name": "extensions",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "My personal extensions on npm registry",
   "workspaces": [
     "packages/*"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "test": "lerna run test --parallel",
     "coverage": "http-server packages/logger/coverage/lcov-report",
