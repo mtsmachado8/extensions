@@ -50,7 +50,7 @@ jobs:
     - attach_workspace:
           at: ~/
     - run:
-        name: Authenticate with nexus
+        name: Authenticate with npm
         command: 'echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc'
     - add_ssh_keys:
         fingerprints:
@@ -70,7 +70,6 @@ workflows:
             - install_dependencies
 
       - publish:
-          context: NEXUS
           requires:
             - tests_lint
           filters:
