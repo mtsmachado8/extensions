@@ -75,6 +75,8 @@ workflows:
           filters:
             tags:
               only: /.*/
+            branches:
+              ignore: /.*/
 
       - tests_lint:
           requires:
@@ -82,6 +84,8 @@ workflows:
           filters:
             tags:
               only: /.*/
+            branches:
+              ignore: /.*/
 
       - publish:
           requires:
@@ -89,3 +93,5 @@ workflows:
           filters:
             tags:
               only: /.*/
+            branches:
+              ignore: /.*/
