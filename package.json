@@ -1,39 +1,29 @@
 {
   "name": "extensions",
   "private": true,
-  "publishConfig": {
-    "access": "public"
-  },
-  "description": "My personal extensions on npm registry",
+  "description": "My personal extensions for nodejs",
   "workspaces": [
     "packages/*"
   ],
-  "scripts": {
-    "test": "lerna run test --parallel",
-    "coverage": "http-server packages/logger/coverage/lcov-report",
-    "bootstrap": "lerna bootstrap",
-    "diff": "lerna diff",
-    "fix": "eslint --ext .js packages/ --fix",
-    "lint": "eslint --ext .js packages/",
-    "lerna:version": "lerna version",
-    "lerna:publish": "lerna publish from-git --yes"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@commitlint/cli": "^8.2.0",
-    "@commitlint/config-conventional": "^8.2.0",
-    "@types/jest": "^24.0.20",
-    "eslint": "^6.5.1",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^22.20.0",
-    "eslint-plugin-node": "^10.0.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "http-server": "^0.11.1",
-    "husky": "^3.0.9",
-    "jest": "^24.8.0",
-    "lerna": "^3.16.4"
-  }
+  "type": "module",
+	"scripts": {
+		"bootstrap": "lerna bootstrap",
+		"lint": "eslint --ext .js packages/",
+    "lint:fix": "eslint --ext .js packages/ --fix",
+		"lerna:version": "lerna version",
+		"lerna:publish": "lerna publish --registry https://npm.pkg.github.com/ from-package"
+	},
+	"devDependencies": {
+		"husky": "^3.1.0",
+		"lerna": "^3.20.2",
+		"@commitlint/cli": "^8.3.5",
+		"@commitlint/config-conventional": "^8.3.4",
+		"eslint": "6.8.0",
+		"lint-staged": "9.5.0",
+		"eslint-config-standard": "14.1.0",
+		"eslint-plugin-import": "2.19.1",
+		"eslint-plugin-node": "11.0.0",
+		"eslint-plugin-promise": "4.2.1",
+		"eslint-plugin-standard": "4.0.1"
+	}
 }

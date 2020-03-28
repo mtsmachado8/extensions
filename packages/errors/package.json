@@ -1,19 +1,14 @@
 {
-  "name": "@mtsmachado8/logger",
+  "name": "@mtsmachado8/errors",
   "version": "0.0.0",
   "publishConfig": {
     "access": "public"
   },
   "type": "module",
-  "description": "A default logger for dealing with all mtsmachado8's repositories",
-  "keywords": [
-    "log",
-    "logger"
-  ],
+  "description": "A error package for dealing with all mtsmachado8's errors both on backend and frontend",
   "author": "mtsmachado8 <mtsmachado8@gmail.com>",
   "homepage": "https://github.com/mtsmachado8/extensions",
   "license": "ISC",
-  "main": "src/index.js",
   "directories": {
     "src": "src"
   },
@@ -26,8 +21,5 @@
   },
   "bugs": {
     "url": "https://github.com/mtsmachado8/extensions/issues"
-  },
-  "dependencies": {
-    "winston": "^3.2.1"
   }
 }

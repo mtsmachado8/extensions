@@ -1,14 +1,14 @@
 {
-  "name": "@mtsmachado8/logger",
+  "name": "@mtsmachado8/repository",
   "version": "0.0.0",
   "publishConfig": {
     "access": "public"
   },
   "type": "module",
-  "description": "A default logger for dealing with all mtsmachado8's repositories",
+  "description": "A default repository for dealing with all mtsmachado8's databses",
   "keywords": [
-    "log",
-    "logger"
+    "db",
+    "database"
   ],
   "author": "mtsmachado8 <mtsmachado8@gmail.com>",
   "homepage": "https://github.com/mtsmachado8/extensions",
@@ -27,7 +27,8 @@
   "bugs": {
     "url": "https://github.com/mtsmachado8/extensions/issues"
   },
-  "dependencies": {
+  "peerDependencies": {
+    "mongoose": "^5.9.5",
     "winston": "^3.2.1"
   }
 }
