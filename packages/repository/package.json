@@ -30,5 +30,6 @@
   "peerDependencies": {
     "mongoose": "^5.9.5",
     "winston": "^3.2.1"
-  }
+  },
+  "gitHead": "798e6ac98a8e0066b5aa88fc0309c8e5e96b5fe8"
 }
