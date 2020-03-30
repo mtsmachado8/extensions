@@ -12,7 +12,7 @@ log.info('message')
 ## Usage ESM
 
 ```
-import log from '@mtsmachado8/logger');
+import log from '@mtsmachado8/logger';
 log.info('message')
 ```
 
