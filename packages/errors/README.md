@@ -17,8 +17,11 @@ log.info('message')
 ```
 
 ## Variáveis de Ambiente
-NODE_END || development -> usado para o formato do log (json para production e color para outros ambientes)
-LOG_LEVEL || silly -> usado para identificar qual nível de mensagem logar
+NODE_END || development
+LOG_LEVEL || silly -> 
+
+O NODE_ENV é usado para o formato do log (json para production e color para outros ambientes)
+O LOG_LEVEL é usado para identificar qual nível de mensagem logar
 
 ## Levels
 - silly
