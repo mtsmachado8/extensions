@@ -11,7 +11,7 @@
 		"lint": "eslint --ext .js packages/",
     "lint:fix": "eslint --ext .js packages/ --fix",
 		"lerna:version": "lerna version",
-		"lerna:publish": "lerna publish from-package"
+		"lerna:publish": "lerna publish from-package --yes"
 	},
 	"devDependencies": {
 		"husky": "^3.1.0",
