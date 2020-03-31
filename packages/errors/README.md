@@ -1,30 +1,29 @@
-# `logger`
+# `Errors`
 
-Módulo usado para logs da aplicação
+Módulo usado para Erros da Api
 
 ## Usage CJS
 
 ```
-const log = require('logger');
-log.info('message')
+const AuthenticationFailed = require('@mtsmachado8/errors/authentication-failed-401');
+throw new AuthenticationFailed();
+```
+this will throw a 401 error with a default message
+or
+```
+const AuthenticationFailed = require('@mtsmachado8/errors/authentication-failed-401');
+throw new AuthenticationFailed('My custom AuthenticationFailed message');
 ```
 
 ## Usage ESM
 
 ```
-import log from '@mtsmachado8/logger');
-log.info('message')
+import AuthenticationFailed from '@mtsmachado8/errors/authentication-failed-401';
+throw new AuthenticationFailed();
 ```
-
-## Variáveis de Ambiente
-NODE_END || development
-LOG_LEVEL || silly -> 
-
-O NODE_ENV é usado para o formato do log (json para production e color para outros ambientes)
-O LOG_LEVEL é usado para identificar qual nível de mensagem logar
-
-## Levels
-- silly
-- info
-- warn
-- error
+this will throw a 401 error with a default message
+or
+```
+import AuthenticationFailed from '@mtsmachado8/errors/authentication-failed-401';
+throw new AuthenticationFailed('My custom AuthenticationFailed message');
+```
