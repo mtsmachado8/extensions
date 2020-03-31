@@ -4,10 +4,9 @@
 name: Node.js Package
 
 on:
-  release:
-    types:
-      - published
-      - created
+  push:
+    branches:
+      - master
 
 jobs:
   build:
