@@ -30,10 +30,4 @@ const log = createLogger({
   ]
 })
 
-log.stream = {
-  write: message => {
-    log.info(message)
-  }
-}
-
 export default log
