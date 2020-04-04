@@ -27,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/mtsmachado8/extensions/issues"
   },
-  "dependencies": {
+  "peerDependencies": {
     "winston": "^3.2.1"
   },
   "gitHead": "798e6ac98a8e0066b5aa88fc0309c8e5e96b5fe8"
