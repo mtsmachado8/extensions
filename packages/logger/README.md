@@ -5,7 +5,7 @@ Módulo usado para logs da aplicação
 ## Usage CJS
 
 ```
-const log = require('logger');
+const log = require('@mtsmachado8/logger');
 log.info('message')
 ```
 
