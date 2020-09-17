@@ -68,11 +68,9 @@ LOG_LEVEL -> usado para identificar qual nível de mensagem logar
 - warn
 - error
 
-```
-
 # Repository
 
-Módulo usado para conectar o mongoose ao projeto de forma simples.
+Módulo usado para conectar o mongodb + mongoose ao projeto de forma simples.
 
 ## Environment Variables
 DATABASE_USER || ''  
